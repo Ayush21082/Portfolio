@@ -30,7 +30,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") no-repeat 0 0;
+  background: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925")
+    no-repeat 0 0;
   filter: blur(80px);
   transform: scale(1.2);
 }
@@ -43,8 +44,8 @@ Chat
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 80vh;
+  width: 600px;
+  height: 600vh;
   max-height: 500px;
   z-index: 2;
   overflow: hidden;
@@ -69,7 +70,8 @@ Chat Title
   text-align: left;
   padding: 10px 10px 10px 50px;
 }
-.chat-title h1, .chat-title h2 {
+.chat-title h1,
+.chat-title h2 {
   font-weight: normal;
   font-size: 10px;
   margin: 0;
@@ -163,7 +165,7 @@ Messages
   float: right;
   color: #fff;
   text-align: right;
-  background: linear-gradient(120deg, #248A52, #257287);
+  background: linear-gradient(120deg, #248a52, #257287);
   border-radius: 10px 10px 0 10px;
 }
 .messages .message.message-personal::before {
@@ -181,7 +183,7 @@ Messages
   transform: scale(0);
   transform-origin: 0 0;
   -webkit-animation: bounce 500ms linear both;
-          animation: bounce 500ms linear both;
+  animation: bounce 500ms linear both;
 }
 .messages .message.loading::before {
   position: absolute;
@@ -197,10 +199,10 @@ Messages
   z-index: 2;
   margin-top: 4px;
   -webkit-animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
-          animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+  animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
   border: none;
   -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 .messages .message.loading span {
   display: block;
@@ -223,7 +225,7 @@ Messages
   z-index: 2;
   margin-top: 4px;
   -webkit-animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
-          animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+  animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
   margin-left: -7px;
 }
 .messages .message.loading span::after {
@@ -240,10 +242,10 @@ Messages
   z-index: 2;
   margin-top: 4px;
   -webkit-animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
-          animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+  animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
   margin-left: 7px;
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 /*--------------------
@@ -278,7 +280,7 @@ Message Box
   right: 10px;
   color: #fff;
   border: none;
-  background: #248A52;
+  background: #248a52;
   font-size: 10px;
   text-transform: uppercase;
   line-height: 1;
@@ -288,7 +290,7 @@ Message Box
   transition: background 0.2s ease;
 }
 .message-box .message-submit:hover {
-  background: #1D7745;
+  background: #1d7745;
 }
 
 /*--------------------
