@@ -529,7 +529,8 @@ body {
   color: #1a3b5d;
   font-family: "Source Sans Pro", sans-serif;
 }
-.card-input__input:hover, .card-input__input:focus {
+.card-input__input:hover,
+.card-input__input:focus {
   border-color: #3d9cff;
 }
 .card-input__input:focus {
@@ -623,4 +624,10 @@ body {
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
+}
+#my-node {
+  background: blue;
+  width: 100px;
+  height: 100px;
+  color: #fff;
 }
