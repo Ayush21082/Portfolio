@@ -736,25 +736,28 @@
         <!-- Main Js -->
         <script src="js/app.js"></script>
 
-        <script src="/shake.js/shake.js"></script>
-        <script>
-          var myShakeEvent = new Shake({
-              threshold: 15, // optional shake strength threshold
-              timeout: 1000 // optional, determines the frequency of event generation
-          });
-          
-          // Start listening to device motion
-          myShakeEvent.start(); 
-          
-          // Register a shake event listener on window with your callback
-          window.addEventListener('shake', shakeEventDidOccur, false); 
-          
-          //function to call when shake occurs
-          function shakeEventDidOccur () {
-          
-              //put your own code here etc.
-              alert('shake!');
-          }
-          </script>
+        <script src="/shake.js/shakxe.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+            
+                //create a new instance of shake.js.
+                var myShakeEvent = new Shake({
+                    threshold: 15
+                });
+            
+                // start listening to device motion
+                myShakeEvent.start();
+            
+                // register a shake event
+                window.addEventListener('shake', shakeEventDidOccur, false);
+            
+                //shake event callback
+                function shakeEventDidOccur () {
+            
+                    //put your own code here etc.
+                    alert('Shake!');
+                }
+            };
+            </script>
     </body>
 </html>
