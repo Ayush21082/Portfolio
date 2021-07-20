@@ -79,6 +79,9 @@ Mousetrap.bind({
     $("#help").modal("hide");
   },
   "a y u s h": function modal() {
+    window.location.href = "https://codexpose.bio.link";
+  },
+  "w i f i": function modal() {
     window.location.href = "/animation/hackerView";
   },
 });
