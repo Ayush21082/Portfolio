@@ -84,4 +84,7 @@ Mousetrap.bind({
   "w i f i": function modal() {
     window.location.href = "/animation/hackerView";
   },
+  "p l a y - m u s i c": function modal() {
+    window.location.href = "/animation/music/bongo-cat";
+  },
 });
